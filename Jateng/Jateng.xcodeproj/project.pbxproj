@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		333A93AADBA01CF0A6257326 /* Pods_Jateng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9195DD910BC4ADB4877576 /* Pods_Jateng.framework */; };
+		D68F65F71FC6A8E900B3DF7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F65F61FC6A8E900B3DF7E /* AppDelegate.swift */; };
+		D68F65F91FC6A8E900B3DF7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F65F81FC6A8E900B3DF7E /* ViewController.swift */; };
+		D68F65FC1FC6A8E900B3DF7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68F65FA1FC6A8E900B3DF7E /* Main.storyboard */; };
+		D68F65FE1FC6A8E900B3DF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D68F65FD1FC6A8E900B3DF7E /* Assets.xcassets */; };
+		D68F66011FC6A8E900B3DF7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68F65FF1FC6A8E900B3DF7E /* LaunchScreen.storyboard */; };
+		D68F660C1FC6A8EA00B3DF7E /* JatengTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F660B1FC6A8EA00B3DF7E /* JatengTests.swift */; };
+		D68F66171FC6A8EA00B3DF7E /* JatengUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F66161FC6A8EA00B3DF7E /* JatengUITests.swift */; };
+		D68F66251FC6A9CD00B3DF7E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F66241FC6A9CD00B3DF7E /* DetailViewController.swift */; };
+		D68F66271FC6A9DB00B3DF7E /* ResepTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F66261FC6A9DB00B3DF7E /* ResepTableViewController.swift */; };
+		D68F66291FC6A9E800B3DF7E /* ResepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F66281FC6A9E800B3DF7E /* ResepTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D68F66081FC6A8EA00B3DF7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D68F65EB1FC6A8E900B3DF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D68F65F21FC6A8E900B3DF7E;
+			remoteInfo = Jateng;
+		};
+		D68F66131FC6A8EA00B3DF7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D68F65EB1FC6A8E900B3DF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D68F65F21FC6A8E900B3DF7E;
+			remoteInfo = Jateng;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11F81BF5FFE090A91860D70A /* Pods_JatengTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JatengTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DC6B7F77DA3AA0251ACCBE /* Pods-Jateng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jateng.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jateng/Pods-Jateng.debug.xcconfig"; sourceTree = "<group>"; };
+		5CE0BDB0397BD539B951635E /* Pods-Jateng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jateng.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jateng/Pods-Jateng.release.xcconfig"; sourceTree = "<group>"; };
+		AEC2197984C0E3B04A57E280 /* Pods_JatengUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JatengUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D68F65F31FC6A8E900B3DF7E /* Jateng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jateng.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D68F65F61FC6A8E900B3DF7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D68F65F81FC6A8E900B3DF7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D68F65FB1FC6A8E900B3DF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D68F65FD1FC6A8E900B3DF7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D68F66001FC6A8E900B3DF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D68F66021FC6A8E900B3DF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D68F66071FC6A8EA00B3DF7E /* JatengTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JatengTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D68F660B1FC6A8EA00B3DF7E /* JatengTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JatengTests.swift; sourceTree = "<group>"; };
+		D68F660D1FC6A8EA00B3DF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D68F66121FC6A8EA00B3DF7E /* JatengUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JatengUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D68F66161FC6A8EA00B3DF7E /* JatengUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JatengUITests.swift; sourceTree = "<group>"; };
+		D68F66181FC6A8EA00B3DF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D68F66241FC6A9CD00B3DF7E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D68F66261FC6A9DB00B3DF7E /* ResepTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResepTableViewController.swift; sourceTree = "<group>"; };
+		D68F66281FC6A9E800B3DF7E /* ResepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResepTableViewCell.swift; sourceTree = "<group>"; };
+		FB9195DD910BC4ADB4877576 /* Pods_Jateng.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jateng.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D68F65F01FC6A8E900B3DF7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333A93AADBA01CF0A6257326 /* Pods_Jateng.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68F66041FC6A8EA00B3DF7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68F660F1FC6A8EA00B3DF7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E52EBC8FFF1FEAD86767A8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB9195DD910BC4ADB4877576 /* Pods_Jateng.framework */,
+				11F81BF5FFE090A91860D70A /* Pods_JatengTests.framework */,
+				AEC2197984C0E3B04A57E280 /* Pods_JatengUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87F144A2C17F78390A75E7D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22DC6B7F77DA3AA0251ACCBE /* Pods-Jateng.debug.xcconfig */,
+				5CE0BDB0397BD539B951635E /* Pods-Jateng.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D68F65EA1FC6A8E900B3DF7E = {
+			isa = PBXGroup;
+			children = (
+				D68F65F51FC6A8E900B3DF7E /* Jateng */,
+				D68F660A1FC6A8EA00B3DF7E /* JatengTests */,
+				D68F66151FC6A8EA00B3DF7E /* JatengUITests */,
+				D68F65F41FC6A8E900B3DF7E /* Products */,
+				87F144A2C17F78390A75E7D7 /* Pods */,
+				6E52EBC8FFF1FEAD86767A8B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D68F65F41FC6A8E900B3DF7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D68F65F31FC6A8E900B3DF7E /* Jateng.app */,
+				D68F66071FC6A8EA00B3DF7E /* JatengTests.xctest */,
+				D68F66121FC6A8EA00B3DF7E /* JatengUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D68F65F51FC6A8E900B3DF7E /* Jateng */ = {
+			isa = PBXGroup;
+			children = (
+				D68F65F61FC6A8E900B3DF7E /* AppDelegate.swift */,
+				D68F65F81FC6A8E900B3DF7E /* ViewController.swift */,
+				D68F65FA1FC6A8E900B3DF7E /* Main.storyboard */,
+				D68F65FD1FC6A8E900B3DF7E /* Assets.xcassets */,
+				D68F65FF1FC6A8E900B3DF7E /* LaunchScreen.storyboard */,
+				D68F66021FC6A8E900B3DF7E /* Info.plist */,
+				D68F66241FC6A9CD00B3DF7E /* DetailViewController.swift */,
+				D68F66261FC6A9DB00B3DF7E /* ResepTableViewController.swift */,
+				D68F66281FC6A9E800B3DF7E /* ResepTableViewCell.swift */,
+			);
+			path = Jateng;
+			sourceTree = "<group>";
+		};
+		D68F660A1FC6A8EA00B3DF7E /* JatengTests */ = {
+			isa = PBXGroup;
+			children = (
+				D68F660B1FC6A8EA00B3DF7E /* JatengTests.swift */,
+				D68F660D1FC6A8EA00B3DF7E /* Info.plist */,
+			);
+			path = JatengTests;
+			sourceTree = "<group>";
+		};
+		D68F66151FC6A8EA00B3DF7E /* JatengUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D68F66161FC6A8EA00B3DF7E /* JatengUITests.swift */,
+				D68F66181FC6A8EA00B3DF7E /* Info.plist */,
+			);
+			path = JatengUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D68F65F21FC6A8E900B3DF7E /* Jateng */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D68F661B1FC6A8EA00B3DF7E /* Build configuration list for PBXNativeTarget "Jateng" */;
+			buildPhases = (
+				47777B21C57A678D2A047FB3 /* [CP] Check Pods Manifest.lock */,
+				D68F65EF1FC6A8E900B3DF7E /* Sources */,
+				D68F65F01FC6A8E900B3DF7E /* Frameworks */,
+				D68F65F11FC6A8E900B3DF7E /* Resources */,
+				AAF744D5CE646D3DB12D9A9D /* [CP] Embed Pods Frameworks */,
+				EAB28A0CDD01903C811FC50C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jateng;
+			productName = Jateng;
+			productReference = D68F65F31FC6A8E900B3DF7E /* Jateng.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D68F66061FC6A8EA00B3DF7E /* JatengTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D68F661E1FC6A8EA00B3DF7E /* Build configuration list for PBXNativeTarget "JatengTests" */;
+			buildPhases = (
+				D68F66031FC6A8EA00B3DF7E /* Sources */,
+				D68F66041FC6A8EA00B3DF7E /* Frameworks */,
+				D68F66051FC6A8EA00B3DF7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D68F66091FC6A8EA00B3DF7E /* PBXTargetDependency */,
+			);
+			name = JatengTests;
+			productName = JatengTests;
+			productReference = D68F66071FC6A8EA00B3DF7E /* JatengTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D68F66111FC6A8EA00B3DF7E /* JatengUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D68F66211FC6A8EA00B3DF7E /* Build configuration list for PBXNativeTarget "JatengUITests" */;
+			buildPhases = (
+				D68F660E1FC6A8EA00B3DF7E /* Sources */,
+				D68F660F1FC6A8EA00B3DF7E /* Frameworks */,
+				D68F66101FC6A8EA00B3DF7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D68F66141FC6A8EA00B3DF7E /* PBXTargetDependency */,
+			);
+			name = JatengUITests;
+			productName = JatengUITests;
+			productReference = D68F66121FC6A8EA00B3DF7E /* JatengUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D68F65EB1FC6A8E900B3DF7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Djoendhie;
+				TargetAttributes = {
+					D68F65F21FC6A8E900B3DF7E = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					D68F66061FC6A8EA00B3DF7E = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D68F65F21FC6A8E900B3DF7E;
+					};
+					D68F66111FC6A8EA00B3DF7E = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D68F65F21FC6A8E900B3DF7E;
+					};
+				};
+			};
+			buildConfigurationList = D68F65EE1FC6A8E900B3DF7E /* Build configuration list for PBXProject "Jateng" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D68F65EA1FC6A8E900B3DF7E;
+			productRefGroup = D68F65F41FC6A8E900B3DF7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D68F65F21FC6A8E900B3DF7E /* Jateng */,
+				D68F66061FC6A8EA00B3DF7E /* JatengTests */,
+				D68F66111FC6A8EA00B3DF7E /* JatengUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D68F65F11FC6A8E900B3DF7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68F66011FC6A8E900B3DF7E /* LaunchScreen.storyboard in Resources */,
+				D68F65FE1FC6A8E900B3DF7E /* Assets.xcassets in Resources */,
+				D68F65FC1FC6A8E900B3DF7E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68F66051FC6A8EA00B3DF7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68F66101FC6A8EA00B3DF7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47777B21C57A678D2A047FB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jateng-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAF744D5CE646D3DB12D9A9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Jateng/Pods-Jateng-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jateng/Pods-Jateng-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAB28A0CDD01903C811FC50C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jateng/Pods-Jateng-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D68F65EF1FC6A8E900B3DF7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68F66251FC6A9CD00B3DF7E /* DetailViewController.swift in Sources */,
+				D68F66291FC6A9E800B3DF7E /* ResepTableViewCell.swift in Sources */,
+				D68F65F91FC6A8E900B3DF7E /* ViewController.swift in Sources */,
+				D68F65F71FC6A8E900B3DF7E /* AppDelegate.swift in Sources */,
+				D68F66271FC6A9DB00B3DF7E /* ResepTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68F66031FC6A8EA00B3DF7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68F660C1FC6A8EA00B3DF7E /* JatengTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68F660E1FC6A8EA00B3DF7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68F66171FC6A8EA00B3DF7E /* JatengUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D68F66091FC6A8EA00B3DF7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D68F65F21FC6A8E900B3DF7E /* Jateng */;
+			targetProxy = D68F66081FC6A8EA00B3DF7E /* PBXContainerItemProxy */;
+		};
+		D68F66141FC6A8EA00B3DF7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D68F65F21FC6A8E900B3DF7E /* Jateng */;
+			targetProxy = D68F66131FC6A8EA00B3DF7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D68F65FA1FC6A8E900B3DF7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D68F65FB1FC6A8E900B3DF7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D68F65FF1FC6A8E900B3DF7E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D68F66001FC6A8E900B3DF7E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D68F66191FC6A8EA00B3DF7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D68F661A1FC6A8EA00B3DF7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D68F661C1FC6A8EA00B3DF7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DC6B7F77DA3AA0251ACCBE /* Pods-Jateng.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Jateng/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Djoe.Jateng;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D68F661D1FC6A8EA00B3DF7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CE0BDB0397BD539B951635E /* Pods-Jateng.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Jateng/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Djoe.Jateng;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D68F661F1FC6A8EA00B3DF7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JatengTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Djoe.JatengTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jateng.app/Jateng";
+			};
+			name = Debug;
+		};
+		D68F66201FC6A8EA00B3DF7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JatengTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Djoe.JatengTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jateng.app/Jateng";
+			};
+			name = Release;
+		};
+		D68F66221FC6A8EA00B3DF7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JatengUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Djoe.JatengUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jateng;
+			};
+			name = Debug;
+		};
+		D68F66231FC6A8EA00B3DF7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JatengUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Djoe.JatengUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jateng;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D68F65EE1FC6A8E900B3DF7E /* Build configuration list for PBXProject "Jateng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D68F66191FC6A8EA00B3DF7E /* Debug */,
+				D68F661A1FC6A8EA00B3DF7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D68F661B1FC6A8EA00B3DF7E /* Build configuration list for PBXNativeTarget "Jateng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D68F661C1FC6A8EA00B3DF7E /* Debug */,
+				D68F661D1FC6A8EA00B3DF7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D68F661E1FC6A8EA00B3DF7E /* Build configuration list for PBXNativeTarget "JatengTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D68F661F1FC6A8EA00B3DF7E /* Debug */,
+				D68F66201FC6A8EA00B3DF7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D68F66211FC6A8EA00B3DF7E /* Build configuration list for PBXNativeTarget "JatengUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D68F66221FC6A8EA00B3DF7E /* Debug */,
+				D68F66231FC6A8EA00B3DF7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D68F65EB1FC6A8E900B3DF7E /* Project object */;
+}

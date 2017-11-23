@@ -1,0 +1,6 @@
+framework module Pods_Jateng {
+  umbrella header "Pods-Jateng-umbrella.h"
+
+  export *
+  module * { export * }
+}
