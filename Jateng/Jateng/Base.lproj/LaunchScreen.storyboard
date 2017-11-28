@@ -5,6 +5,8 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,23 +24,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images-1" translatesAutoresizingMaskIntoConstraints="NO" id="3CM-cO-es6">
-                                <rect key="frame" x="127" y="534" width="121" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="3CM-cO-es6">
+                                <rect key="frame" x="127" y="511" width="121" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="bIH-rd-14b"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="r7V-rJ-taO">
-                                <rect key="frame" x="0.0" y="136" width="375" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="r7V-rJ-taO">
+                                <rect key="frame" x="0.0" y="89" width="375" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="E0X-nG-nIv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="OsL-3H-6P2"/>
+                                    <constraint firstAttribute="width" secondItem="r7V-rJ-taO" secondAttribute="height" multiplier="75:44" id="bCz-gY-7J2"/>
+                                    <constraint firstAttribute="width" constant="375" id="j1c-Ie-GJm"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resep Masakan Jawa Tengah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fs7-QA-4vp">
-                                <rect key="frame" x="16" y="357" width="343" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resep Masakan Jawa Tengah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fs7-QA-4vp">
+                                <rect key="frame" x="16" y="317" width="342" height="25"/>
                                 <fontDescription key="fontDescription" name="Baskerville-BoldItalic" family="Baskerville" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99169057607650757" green="0.77991443872451782" blue="0.46894288063049316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3CM-cO-es6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="5Oa-kg-76i"/>
+                            <constraint firstItem="fs7-QA-4vp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="75x-Tm-gsc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3CM-cO-es6" secondAttribute="bottom" constant="55" id="9K9-iQ-F71"/>
+                            <constraint firstItem="r7V-rJ-taO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FZo-pr-Wkm"/>
+                            <constraint firstItem="3CM-cO-es6" firstAttribute="centerX" secondItem="fs7-QA-4vp" secondAttribute="centerX" id="iUM-ID-5FG"/>
+                            <constraint firstItem="r7V-rJ-taO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oxl-E4-2Iv"/>
+                            <constraint firstItem="r7V-rJ-taO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="ppP-qI-mQy"/>
+                            <constraint firstItem="fs7-QA-4vp" firstAttribute="centerX" secondItem="r7V-rJ-taO" secondAttribute="centerX" id="qiq-OE-zhx"/>
+                            <constraint firstItem="fs7-QA-4vp" firstAttribute="top" secondItem="r7V-rJ-taO" secondAttribute="bottom" constant="8" symbolic="YES" id="tbY-Ks-HhH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -48,7 +67,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="225" height="225"/>
         <image name="images" width="341" height="148"/>
-        <image name="images-1" width="225" height="225"/>
     </resources>
 </document>
